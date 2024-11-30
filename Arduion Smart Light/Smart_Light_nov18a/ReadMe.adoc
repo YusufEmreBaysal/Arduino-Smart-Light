@@ -1,0 +1,59 @@
+:Author: biggbrother
+:Email: yusufemrebaysal99@gmail.com
+:Date: 18/11/2023
+:Revision: version#
+:License: Public Domain
+
+= Project: {Project}
+
+Wireless temperature sensor with autoconnect feature.
+
+There are countless Arduino wireless temperature sensor codes available online. 
+You can follow any of themâI did the same. However, over time, I noticed an issue: after 1-2 days of continuous operation, 
+the Arduino's Wi-Fi connection would drop, and the only way to reconnect was to manually restart the Arduino using the reset button.
+
+This project addresses that issue by periodically checking the Wi-Fi connection status. 
+If the connection is lost for a certain period, the system automatically attempts to reconnect.
+
+The project has been in active use for over a year. Monitoring the connection status via Arduino Cloud reveals that occasional 
+disconnections occur every few days due to device errors. However, these interruptions generally last no more than a minute,
+as the Arduino automatically reconnects to the Wi-Fi network.
+
+== Step 1: Installation
+
+1. Open this file
+2. Edit as you like
+
+== Step 2: Assemble the circuit
+
+Images about the project can be found at te Figures folder.
+
+== Step 3: Load the code
+
+Upload the code contained in this sketch on to your board
+
+=== Folder structure
+Smart_Light_nov18a
+....
+ Smart_Light_nov18a           => Arduino sketch folder
+  âââ Smart_Light_nov18a.ino  => main Arduino file
+  âââ Figures                 => Image of the project
+  âââ ReadMe.adoc             => this file
+....
+
+=== Why This Project
+
+=== License
+There is no license.
+
+=== Contributing
+To contribute to this project please contact me.
+
+=== BOM
+Add the bill of the materials you need for this project.
+
+|===
+| Part name         | Quantity
+| Arduion ESP8266   | 1       
+| DHT11             | 1        
+|===
